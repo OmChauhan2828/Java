@@ -45,8 +45,22 @@
 //         Scanner sc = new Scanner(System.in);
 //         int a = sc.nextInt();
 //         int b = sc.nextInt();
-//         int sum = a + b;
-//         System.out.println("The sum of a and b is: " + sum);
+//         int c =sc.nextInt();
+
+//         float avg = (a + b + c) / 3.0f;
+//         System.out.println("The average of a, b, and c is: " + avg);
 
 //     }
 // }
+
+// Area of square
+import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int side = sc.nextInt();
+        int area = side * side;
+        System.out.println("The area of the square is: " + area);
+
+    }
+}
