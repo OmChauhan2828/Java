@@ -9,7 +9,7 @@ public class Java2 {
      System.out.println("You are a teenager");
     }
     else{
-        System.out.println("You are not eligiible for the voting");   
+        System.out.println("not adult");   
     } 
     }
     
