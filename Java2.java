@@ -33,7 +33,7 @@ public class Java2 {
    if(income<500000) {
     tax=0;
    }
-   else if(income>=500000 && income<1000000) {
+   else if(income>=50000 && income<100000) {
     tax=(int)(income*0.2);
    }
    else {
