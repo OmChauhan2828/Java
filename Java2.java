@@ -34,7 +34,7 @@ public class Java2 {
     tax=0;
    }
    else if(income>=50000 && income<100000) {
-    tax=(int)(income*0.2);
+    tax=(int)(income*0.4);
    }
    else {
     tax=(int)(income*0.3);
