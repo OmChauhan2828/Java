@@ -49,10 +49,16 @@ import java.util.*;
 // do while loop
 public class Javaloops {
     public static void main(String args[]){
-        int count=1;
+        Scanner sc =new Scanner(System.in);
+
         do{
-            System.out.println(count);
-            count++;
-        }while(count<=10);
+            System.out.println("Enter a number");
+            int n =sc.nextInt();
+           if(n %10 ==0){
+            break;
+           }
+
+            System.out.println(n);
+        }while(true);
     }
 }
