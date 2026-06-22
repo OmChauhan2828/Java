@@ -1,6 +1,6 @@
 public class JavaFunctions {
     public static void printhello(){
-        System.out.println("Hello, World!");
+        System.out.println("Hello, coders!");
         System.out.println("Hello, World");
         System.out.println("Om Chauhan this side!");
 
@@ -8,7 +8,7 @@ public class JavaFunctions {
     public static void main(String[] args) {
         printhello();
     }
-
+}
 // product of two numbers using functions
 //  public class JavaFunctions {
 //     public static void multiply(int a, int b){
