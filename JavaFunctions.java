@@ -27,18 +27,41 @@
 
 // To find the factorial of a number using fucntion
 
-public class JavaFunctions {
-    public static int factorial(int n){
-        int fact = 1;
-        for(int i=1; i<=n; i++){
-            fact = fact * i;
+// public class JavaFunctions {
+//     public static int factorial(int n){
+//         int fact = 1;
+//         for(int i=1; i<=n; i++){
+//             fact = fact * i;
+//         }
+//         return fact;
+//     }
+
+//     public static void main(String[] args) {
+//         int num = 9;
+//         int result = factorial(num);
+//         System.out.println("The factorial of " + num + " is: " + result);
+//     }
+// }
+
+// Convert a number from binary to decimal using function
+
+public class JavaFunctions{
+    public static void bintodec(int binum){
+        int pow=0;
+        int decnum=0;
+
+        while(binum>0){
+            int lastdigit = binum%10;
+            decnum = decnum + lastdigit*(int)Math.pow(2,pow);
+            pow++;
+            binum = binum/10;
         }
-        return fact;
+        System.out.println("The decimal number is: " + decnum);
+
     }
 
     public static void main(String[] args) {
-        int num = 9;
-        int result = factorial(num);
-        System.out.println("The factorial of " + num + " is: " + result);
+        int binum = 1011;
+        bintodec(binum);
     }
 }
