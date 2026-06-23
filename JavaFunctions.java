@@ -61,7 +61,7 @@ public class JavaFunctions{
     }
 
     public static void main(String[] args) {
-        int binum = 1000;
+        int binum = 1000101;
         bintodec(binum);
     }
 }
