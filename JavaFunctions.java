@@ -66,8 +66,7 @@ public class JavaFunctions{
     }
 }
 
-// decimal to binary using function
-public class JavaFunctions{
+    // decimal to binary using function
     public static void dectobin(int decnum){
         int binum=0;
         int pow=0;
@@ -82,7 +81,6 @@ public class JavaFunctions{
     }
 
     public static void main(String[] args) {
-        int decnum = 69;
+        int decnum = 55;
         dectobin(decnum);
     }
-}
