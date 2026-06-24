@@ -65,3 +65,24 @@ public class JavaFunctions{
         bintodec(binum);
     }
 }
+
+// decimal to binary using function
+public class JavaFunctions{
+    public static void dectobin(int decnum){
+        int binum=0;
+        int pow=0;
+
+        while(decnum>0){
+            int rem = decnum%2;
+            binum = binum + rem*(int)Math.pow(10,pow);
+            pow++;
+            decnum = decnum/2;
+        }
+        System.out.println("The binary number is: " + binum);
+    }
+
+    public static void main(String[] args) {
+        int decnum = 69;
+        dectobin(decnum);
+    }
+}
