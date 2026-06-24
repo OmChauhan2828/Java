@@ -81,6 +81,6 @@ public class JavaFunctions{
     }
 
     public static void main(String[] args) {
-        int decnum = 55;
+        int decnum = 46;
         dectobin(decnum);
     }
