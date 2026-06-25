@@ -20,6 +20,7 @@ import java.util.*;
 
 
 // linear Search
+
 // public class JavaArray {
 //     public static int linearsearch(int number[], int key) {
 //         for (int i = 0; i < number.length; i++) {
@@ -43,23 +44,55 @@ import java.util.*;
 //         System.out.println();
 //     }
 
+
+
 // Largest Number in the array
+
+// public class JavaArray {
+
+//     public static int getlargest(int numbers[]){
+//         int largest = Integer.MIN_VALUE;
+
+//         for(int i=0;i<numbers.length;i++){
+//             if(largest<numbers[i]){
+//                 largest = numbers[i];
+//             }
+//         }
+//         return largest;
+//     }
+//     public static void main(String args[]) {
+//         int numbers[]={1,2,3,6,7};
+//         System.out.println("the largest number in the array is"+ getlargest(numbers));
+//     }
+
+
+
+// Binary Search
+
 public class JavaArray {
+    public static int binarysearch(int numbers[],int key){
+        int start=0; int end = numbers.length-1;
 
-    public static int getlargest(int numbers[]){
-        int largest = Integer.MIN_VALUE;
+        while(start<=end){
+         int mid = (start+end)/2;
 
-        for(int i=0;i<numbers.length;i++){
-            if(largest<numbers[i]){
-                largest = numbers[i];
-            }
+        if(numbers[mid]==key) {
+            return mid;
         }
-        return largest;
+        if(numbers[mid]<key) {
+            start=mid+1;
+        }else {
+            end=mid-1;
+        }
+        }
+        return -1;
     }
-    public static void main(String args[]) {
-        int numbers[]={1,2,3,6,7};
-        System.out.println("the largest number in the array is"+ getlargest(numbers));
 
+    public static void main(String[] args){
+    int numbers[]={2,4,6,8,10,12,14};
+    int key=10;
 
+    System.out.println("index for key is:" + binarysearch(numbers, key));
     }
 }
+
