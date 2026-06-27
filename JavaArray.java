@@ -137,10 +137,16 @@ public class JavaArray{
     for(int i=0;i<prices.length;i++){
         if (buyprice<prices[i]){
             int profit=prices[i]-buyprice;
+            maxProfit=Math.max(maxProfit , profit);
+        }else {
+            buyprice = prices[i];
         }
     }
+
+    return maxProfit;
  }   
 public static void main(String args[]){
     int prices[]= {7,1,4,6,3};
+    System.out.println(BuyandSellStocks(prices));
 }
 }
