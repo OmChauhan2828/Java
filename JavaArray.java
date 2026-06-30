@@ -146,7 +146,7 @@ public class JavaArray{
     return maxProfit;
  }   
 public static void main(String args[]){
-    int prices[]= {8,1,4,6,3,15};
+    int prices[]= {8,1,4,9,3,15};
     System.out.println(BuyandSellStocks(prices));
 }
 }
