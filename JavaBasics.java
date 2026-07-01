@@ -30,7 +30,7 @@
 //         // System.out.println(s);
 
 //         // Sum of two numbers
-//             // int a=10;
+//             // int a=30;
 //             // int b=40;
 //             // int sum =a+b;
 //             // System.out.println("The sum of a and b is: " + sum);
